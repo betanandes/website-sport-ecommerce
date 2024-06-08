@@ -13,7 +13,7 @@
 
             <!-- FORM HEADER -->
             <div id="form_header">
-                <h1>Login</h1>
+                <h1>Entrar</h1>
                 <i id="mode_icon" class="fa-solid fa-moon"></i>
             </div>
 
@@ -39,27 +39,17 @@
                         Usuário
                         <div class="input-field">
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" id="name" name="name" oninvalid="this.setCustomValidity('Digite seu usuário')" required>
+                            <input type="text" id="name" name="name" maxlength="6" oninvalid="this.setCustomValidity('Digite seu usuário')" required>
                         </div>
                     </label>
                 </div>
-
-                <!-- <div class="input-box">
-                    <label for="email">
-                        E-mail
-                        <div class="input-field">
-                            <i class="fa-solid fa-envelope"></i>
-                            <input type="text" id="email" name="email" oninvalid="this.setCustomValidity('Mensagem costumizada aqui')" required>
-                        </div>
-                    </label>
-                </div> -->
                 
                 <div class="input-box">
                     <label for="password">
                         Senha
                         <div class="input-field">
                             <i class="fa-solid fa-key"></i>
-                            <input type="password" id="name" name="name" oninvalid="this.setCustomValidity('Mensagem costumizada aqui')" required>
+                            <input type="password" id="name" name="name" maxlength="8" oninvalid="this.setCustomValidity('Mensagem costumizada aqui')" required>
                         </div>
                     </label>
 

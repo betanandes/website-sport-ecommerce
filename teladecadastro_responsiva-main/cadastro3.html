@@ -9,14 +9,21 @@
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="cadastro3.css">
      
-    <!----===== Iconscout CSS ===== -->
+    <!----===== Icons CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-   <title>Responsive Regisration Form </title>
+   <title>Resgistre-se</title>
 </head>
 <body>
     <div class="container">
         <header>Cadastrar</header>
+        <a href="../index.html">
+            <p>Voltar</p>
+        </a>
+
+        <!-- <button type="reset">Limpar</button> -->
+
+                    <!--===== PRIMEIRA PÁGINA =====-->
 
         <form action="#">
             <div class="form first">
@@ -26,7 +33,7 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Nome Completo</label>
-                            <input type="text" placeholder="Digite seu nome completo" required>
+                            <input type="text" placeholder="Digite seu nome completo" minlength="15" maxlength="80" required>
                         </div>
 
                         <div class="input-field">
@@ -40,8 +47,8 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Telefone Celular</label>
-                            <input type="tel" placeholder="(xx) xxxxx-xxxx" required>
+                            <label>Celular</label>
+                            <input type="tel" placeholder="Digite seu celular" onkeydown="ajustaTelefone(this)" onkeypress="ajustaTelefone(this)" onkeyup="ajustaTelefone(this)" maxlength="15" required>
                         </div>
 
                         <div class="input-field">
@@ -56,7 +63,7 @@
 
                         <div class="input-field">
                             <label>Telefone Fixo</label>
-                            <input type="tel" placeholder="(xx) xxxx-xxxx" required>
+                            <input type="tel" placeholder="Digite seu telefone" onkeydown="ajustaTelefone(this)" onkeypress="ajustaTelefone(this)" onkeyup="ajustaTelefone(this)" maxlength="15" required>
                         </div>
 
                     </div>
@@ -106,6 +113,8 @@
                 </div> 
             </div>
 
+            <!-- SEGUNDA PÁGINA-->
+
             <div class="form second">
                 <div class="details address">
                     <span class="title">Endereço</span>
@@ -113,32 +122,32 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>CEP</label>
-                            <input type="text" placeholder="Digite seu CEP" required>
+                            <input type="text" id="idCep" placeholder="Digite seu CEP" onblur="preencherEndereco(this)">
                         </div>
 
                         <div class="input-field">
                             <label>Número</label>
-                            <input type="text" placeholder="Digite seu número" required>
+                            <input type="text" placeholder="Digite seu número" onblur="preencherEndereco(this)">
                         </div>
 
                         <div class="input-field">
                             <label>Complemento</label>
-                            <input type="text" placeholder="Digite seu complemento" required>
+                            <input type="text" id="idComp" placeholder="Digite seu complemento" onblur="preencherEndereco(this)">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Rua</label>
+                            <input type="text" id="idRua" placeholder="Digite sua rua" onblur="preencherEndereco(this)">
                         </div>
 
                         <div class="input-field">
                             <label>Bairro</label>
-                            <input type="text" placeholder="Digite seu bairro" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Cidade</label>
-                            <input type="text" placeholder="Digite sua cidade" required>
+                            <input type="text" id="idBairro" placeholder="Digite seu bairro" onblur="preencherEndereco(this)">
                         </div>
 
                         <div class="input-field">
                             <label>Estado</label>
-                            <input type="text" placeholder="Digite seu estado" required>
+                            <input type="text" id="idUf" placeholder="Digite seu estado" onblur="preencherEndereco(this)">
                         </div>
 
                         <!-- <div class="input-field">

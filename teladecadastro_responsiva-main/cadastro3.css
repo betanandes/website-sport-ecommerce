@@ -124,6 +124,21 @@ form .fields .input-field{
 .input-field input[type="date"]:valid{
     color: #333;
 }
+
+/* button {
+    color: #333;
+    background-color: #fff;
+    border: none;
+    margin-left: 405px;
+    text-decoration: none;
+} */
+
+a {
+    color: #333;
+    text-align: right;
+    text-decoration: none;
+}
+
 .container form button, .backBtn{
     display: flex;
     align-items: center;
