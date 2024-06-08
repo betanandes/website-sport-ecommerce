@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Soulfit Store</title>
+</head>
+<body>
+    <nav id="nav"> <!-- colocar um botão para cadastro aqui!!! -->
+        <div class="navTop">
+            <div class="navItem">
+                <a href="../index.html">
+                    <img src="img/soulfit_logo_white (1) (1).png" width="100" alt="">
+                </a>
+            </div>
+            <div class="navItem">
+                <div class="seach">
+                    <input type="text" placeholder="Buscar..." class="searchInput">
+                    <img src="../img/search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <!-- <span class="limitedOffer">
+                    Oferta Limitada!</span> -->
+                    <a href="/tela_login_darkmode-main/login.html">ENTRE</a> / 
+                    <a href="/teladecadastro_responsiva-main/cadastro3.html">CADASTRE-SE</a>
+            </div>
+        </div>
+        <div class="navBotton">
+            <a href="#">
+                <h6 class="menuItem">CATEGORIAS</h6>
+            </a>
+
+            <a href="#">
+                <h6 class="menuItem">OFERTAS</h6>
+            </a>
+
+            <a href="#">
+                <h6 class="menuItem">HISTÓRICO</h6>
+            </a>
+
+            <a href="shopping_cart/index.html">
+                <h6 class="menuItem">CARRINHO</h6>
+            </a>
+
+            <a href="#">
+                <h6 class="menuItem">CONTATO</h6>
+            </a>
+        </div>
+    </nav>
+
+    <!-- *****CAROUSEL***** -->
+
+        <style>
+            .carousel-indicators img {
+                width: 70px;
+                display: block;
+            }
+            
+            .carousel-indicators button {
+                width: max-content!important;
+            }
+
+            /* .carousel-indicators {
+                position: unset;
+            } */
+
+            .carousel-indicators button.active img {
+                border: 2px solid green;
+            }
+        </style>
+
+     <div class="carousel slide" 
+     id="carouselDemo"
+     data-bs-wrap="true" 
+     data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active"  data-bs-interval="2000">
+                <img src="img/banner2.jpg" class="w-100">
+                <div class="carousel-caption">
+                    <!-- <h5>Title Slide 0</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> -->
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/banner1.jpg" class="w-100">
+                <div class="carousel-caption">
+                    <!-- <h5>Title Slide 1</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> -->
+                </div>
+            </div>
+
+            <div class="carousel-item"  data-bs-interval="2000">
+                <img src="img/banner2.jpg" class="w-100">
+                <div class="carousel-caption">
+                    <!-- <h5>Title Slide 2</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> -->
+                </div>
+            </div>
+
+            <div class="carousel-item"  data-bs-interval="2000">
+                <img src="img/banner1.jpg" class="w-100">
+                <div class="carousel-caption">
+                    <!-- <h5>Title Slide 3</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> -->
+                </div>
+            </div> 
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+        data-bs-target="#carouselDemo"
+        data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+
+            <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselDemo"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+        <div class="carousel-indicators">
+            <button type="button" class="active"
+            data-bs-target="#carouselDemo"
+            data-bs-slide-to="0">
+                <img src="img/banner2.jpg">
+        </button>
+
+            <button type="button" class="active"
+            data-bs-target="#carouselDemo"
+            data-bs-slide-to="1">
+                <img src="img/banner1.jpg">
+        </button>
+
+            <button type="button" class="active"
+            data-bs-target="#carouselDemo"
+            data-bs-slide-to="2">
+                <img src="img/banner2.jpg">
+        </button>
+
+            <button type="button" class="active"
+            data-bs-target="#carouselDemo"
+            data-bs-slide-to="3">
+                <img src="img/banner1.jpg">        
+        </button>
+        </div>
+
+       <!-- <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="./img/air.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AIR FORCE<br/> NOVA<br/> TEMPORADA</h1>
+                <h2 class="sliderPrice">R$350</h2>
+                <a href="#product">
+
+                    <button class="buyButton">COMPRE AGORA!</button>     
+                </a>
+                
+            </div>
+
+            <div class="sliderItem">
+                <img src="./img/bone1.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">BONÉ<br/> NOVA<br/> TEMPORADA</h1>
+                <h2 class="sliderPrice">R$100</h2>
+                <a href="#product">
+
+                    <button class="buyButton">COMPRE AGORA!</button>
+                </a>
+                
+            </div>
+
+            <div class="sliderItem">
+                <img src="./img/jaqueta1.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">JAQUETA<br/> NOVA<br/> TEMPORADA</h1>
+                <h2 class="sliderPrice">R$239</h2>
+                <a href="#product">
+
+                    <button class="buyButton">COMPRE AGORA!</button>
+                </a>
+                
+            </div>
+
+            <div class="sliderItem">
+                <img src="./img/saia1.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">SAIA<br/> NOVA<br/> TEMPORADA</h1>
+                <h2 class="sliderPrice">R$189</h2>
+                <a href="#product">
+
+                    <button class="buyButton">COMPRE AGORA!</button>
+                </a>
+                
+            </div>
+
+            <div class="sliderItem">
+                <img src="./img/top1.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">TOP<br/> NOVA<br/> TEMPORADA</h1>
+                <h2 class="sliderPrice">R$119</h2>
+                <a href="#product">
+
+                    <button class="buyButton">COMPRE AGORA!</button>
+                </a>
+                
+            </div>
+        </div> -->
+    </div> 
+
+    <!-- *****FIM CAROUSEL***** -->
+    
+
+    <div class="features">
+        <div class="feature">
+            <img src="img/shipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">FRETE GRÁTIS</span>
+            <span class="featureDesc">
+                Frete grátis para todo o mundo em todos os pedidos.</span>
+        </div>
+        <div class="feature">
+            <img src="img/return.png" alt="" class="featureIcon">
+            <span class="featureTitle">30 DIAS DE RETORNO</span>
+            <span class="featureDesc">
+                Sem dúvida, devolução e reembolso fácil em 14 dias.</span>
+        </div>
+        <div class="feature">
+            <img src="img/gift.png" alt="" class="featureIcon">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">
+                Compre cartões-presente e use códigos de cupom facilmente.</span>
+        </div>
+        <div class="feature">
+            <img src="img/contact.png" alt="" class="featureIcon">
+            <span class="featureTitle">CONTATE-NOS!</span>
+            <span class="featureDesc">
+                Mantenha contato via e-mail e sistema de suporte.</span>
+        </div>
+    </div>
+
+
+   <!-- <div class="product" id="product">
+        <img src="img/air.png" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">AIR FORCE</h1>
+            <h2 class="productPrice">R$400</h2>
+            <p class="productDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque blanditiis odio doloribus eligendi dolorum rerum vel fugiat magnam? Consequuntur officiis fugit earum vitae deleniti repellendus corrupti tempora, est vel adipisci.</p>
+        
+        <div class="colors">
+            <div class="color"></div>
+            <div class="color"></div>
+        </div>
+        <div class="sizes">
+            <div class="size">P</div>
+            <div class="size">M</div>
+            <div class="size">G</div>
+        </div> 
+        <button class="productButton">COMPRE AGORA!</button>
+        </div>
+
+         <div class="payment">
+            <h1 class="payTitle">Informações Pessoais</h1>
+            <label>Nome e Sobrenome</label>
+            <input type="text" placeholder="Merliah Fernandes" class="payInput">
+            <label>Celular</label>
+            <input type="text" placeholder="+55 1 2345 6789" class="payInput">
+            <label>Endereço</label>
+            <input type="text" placeholder=" Av. Paris, 84" class="payInput">
+
+
+            <h1 class="payTitle">Informações do Cartão</h1>
+            <div class="cardIcons">
+                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+                <img src="./img/master.png"  alt="" width="40"class="cardIcon">
+            </div>
+            
+            <input type="password" class="payInput" placeholder="Número do Cartão">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="aaaa" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Pagar!</button>
+            <span class="close">X</span>
+        </div> 
+    </div> -->
+
+        <!-- *****GALERIA DE FOTOS***** -->
+
+        <div class="gallery">
+            <div class="galleryItem">
+                <h1 class="galleryTitle">Seja você mesmo!</h1>
+                <img src="https://images.pexels.com/photos/3214724/pexels-photo-3214724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="galleryImg">
+            </div>
+            <div class="galleryItem">
+                <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500%22" alt="" class="galleryImg">
+                <h1 class="galleryTitle">Vamos trabalhar, porque nascemos bonitos, mas não ricos.</h1>
+            </div>
+            <div class="galleryItem">
+                <h1 class="galleryTitle">Persiga seus objetivos do mesmo jeito que você corre atrás do ônibus!</h1>
+                <img src="img/Banner-Selecao.png" alt="" class="galleryImg">
+            </div>
+        </div> 
+
+    <!-- *****ESCOLHA SEU ESTILO + IMPORTANDO CART***** -->
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">OLHA SÓ ESSAS NOVIDADES!</h3>
+            <!-- <h1 class="nsTitleSm">Nova Temporada</h1> -->
+            <h1 class="nsTitleSm">Nova Coleção</h1>
+            <a href="shopping_cart/index.html">
+                <button class="nsButton">ESCOLHA AQUI</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="nsImg">
+        </div>
+    </div>
+    
+<!-- 
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">OLHA SÓ ESSAS NOVIDADES!</h3>
+            <h1 class="nsTitleSm">Nova Temporada</h1>
+            <h1 class="nsTitleSm">Nova Coleção</h1>
+            <a href="shopping_cart/index.html">
+                <button class="nsButton">ESCOLHA SEU ESTILO</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="nsImg">
+        </div>
+    </div> -->
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Sobre Nós</h1>
+                <ul class="fList">
+                    <li class="fListItem">Empresa</li>
+                    <li class="fListItem">Contato</li>
+                    <li class="fListItem">Carreiras</li>
+                    <li class="fListItem">Afiliados</li>
+                    <li class="fListItem">Lojas</li>
+                </ul>
+            </div>
+
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Links Úteis</h1>
+                <ul class="fList">
+                    <li class="fListItem">Suporte</li>
+                    <li class="fListItem">Reembolso</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Histórias</li>
+                </ul>
+            </div>
+
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Produtos</h1>
+                <ul class="fList">
+                    <li class="fListItem">Tênis</li>
+                    <li class="fListItem">Bonés</li>
+                    <li class="fListItem">Jaquetas</li>
+                    <li class="fListItem">Saias</li>
+                    <li class="fListItem">Tops</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Inscreva-se em nossa newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="seu@email.com" class="fInput">
+                    <button class="fButton">Junte-se!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Siga-nos</h1>
+                <div class="fIcons">
+                    <img src="img/facebook.png" alt="" class="fIcon">
+                    <img src="img/twitter.png" alt="" class="fIcon">
+                    <img src="img/instagram.png" alt="" class="fIcon">
+                    <img src="img/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">© Copyright RF.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
