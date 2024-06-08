@@ -139,6 +139,7 @@ form .fields .input-field{
     background-color: #009665;
     transition: all 0.3s linear;
     cursor: pointer;
+    text-decoration: none;
 }
 .container form .btnText{
     font-size: 14px;
