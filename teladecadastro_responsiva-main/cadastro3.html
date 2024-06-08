@@ -20,12 +20,14 @@
         <a href="../index.html">
             <p>Voltar</p>
         </a>
-
-        <!-- <button type="reset">Limpar</button> -->
+        
 
                     <!--===== PRIMEIRA PÁGINA =====-->
 
         <form action="#">
+
+            <input type="reset" value="Limpar">
+
             <div class="form first">
                 <div class="details personal">
                     <span class="title">Informações Pessoais</span>
@@ -62,7 +64,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Telefone Fixo</label>
+                            <label>Telefone</label>
                             <input type="tel" placeholder="Digite seu telefone" onkeydown="ajustaTelefone(this)" onkeypress="ajustaTelefone(this)" onkeyup="ajustaTelefone(this)" maxlength="15" required>
                         </div>
 
@@ -71,6 +73,7 @@
 
                 <div class="details ID">
                     <!-- <span class="title">Identity Details</span> -->
+        
 
                     <div class="fields">
                         <div class="input-field">
@@ -79,16 +82,16 @@
                             pattern="\d{3}\d{3}\d{3}\d{2}" \
                             placeholder="Digite seu CPF" required>
                         </div>
-<!-- 
+
                         <div class="input-field">
                             <label>ID Number</label>
                             <input type="number" placeholder="Enter ID number" required>
                         </div>
 
-                        <div class="input-field">
+                        <!-- <div class="input-field">
                             <label>Issued Authority</label>
                             <input type="text" placeholder="Enter issued authority" required>
-                        </div> -->
+                        </div>  -->
 
                         <!-- <div class="input-field">
                             <label>Issued State</label>
@@ -163,17 +166,17 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Usuário</label>
-                            <input type="text" placeholder="Digite seu usuário" required>
+                            <input type="text" placeholder="Digite seu usuário" maxlength="6" required>
                         </div>
 
                         <div class="input-field">
                             <label>Senha</label>
-                            <input type="password" placeholder="Digite sua senha" required>
+                            <input type="password" placeholder="Digite sua senha" maxlength="8" required>
                         </div>
 
                         <div class="input-field">
                             <label>Confirme sua senha</label>
-                            <input type="password" placeholder="Confirme sua senha" required>
+                            <input type="password" placeholder="Confirme sua senha" maxlength="8" required>
                         </div>
 
 

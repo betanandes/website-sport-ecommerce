@@ -125,18 +125,27 @@ form .fields .input-field{
     color: #333;
 }
 
-/* button {
+input {
     color: #333;
     background-color: #fff;
     border: none;
-    margin-left: 405px;
+    margin-left: 794px;
     text-decoration: none;
-} */
+    cursor: pointer;
+}
+
+form input:hover{
+    color: #009665;
+}
 
 a {
     color: #333;
     text-align: right;
     text-decoration: none;
+}
+
+a:hover{
+    color: #009665;
 }
 
 .container form button, .backBtn{

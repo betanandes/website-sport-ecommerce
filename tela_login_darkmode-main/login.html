@@ -9,7 +9,7 @@
 </head>
 <body>
     <main id="container">
-        <form id="login_form">
+        <form id="login_form" action="/index.html">
 
             <!-- FORM HEADER -->
             <div id="form_header">
@@ -39,7 +39,7 @@
                         Usuário
                         <div class="input-field">
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" id="name" name="name" maxlength="6" oninvalid="this.setCustomValidity('Digite seu usuário')" required>
+                            <input type="text" id="name" name="name" maxlength="6" required>
                         </div>
                     </label>
                 </div>
@@ -49,7 +49,7 @@
                         Senha
                         <div class="input-field">
                             <i class="fa-solid fa-key"></i>
-                            <input type="password" id="name" name="name" maxlength="8" oninvalid="this.setCustomValidity('Mensagem costumizada aqui')" required>
+                            <input type="password" id="name" name="name" maxlength="8"  required>
                         </div>
                     </label>
 
@@ -72,7 +72,7 @@
             <!-- <button type="submit" id="login_button">
                 Entrar
             </button> -->
-            <a class="soulfit-btn" id="login_button" href="../index.html">Entrar</a>
+            <input type="submit" class="soulfit-btn" id="login_button">
             <a class="soulfit-btn" id="login_button" href="../index.html">Voltar</a>
 
             
