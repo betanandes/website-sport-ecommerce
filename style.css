@@ -60,6 +60,10 @@ nav {
     font-weight: 400;
 }
 
+.menuItem:hover {
+    color: #369e62;
+}
+
 .loginButton {
     display: flex;
     align-items: end;
@@ -73,11 +77,6 @@ nav {
     
 }
 
-/* .loginButton:hover{
-    background-color: #fff;
-    color: #000;
-} */
-
 .navBotton a{
     text-decoration: none;
     color: #fff;
@@ -87,6 +86,10 @@ nav {
 .navItem a {
     text-decoration: none;
     color: #fff;
+}
+
+.navItem a:hover {
+    color: #369e62;
 }
 
 /* ***** NAV ***** */
@@ -426,6 +429,11 @@ label {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.nsItem button:hover {
+    background: #369e62;
+    color: #fff;
 }
 
 .nsImg {
